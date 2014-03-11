@@ -13,7 +13,6 @@
 * Our software is complicated
 * same code/different env == bad
 
-
 # [] A Brief History of DevOps
 * At the dawn of the computer age, there was no distinction between dev and ops.
 
@@ -51,9 +50,11 @@
 
 # [] Scott Cook
 * Intuit's Scott Cook at the Economist conference 2011 Talking about when TurboTax:
-By installing a rampant innovation culture, they now do 165 experiments in the three months of the season. Our business result? Conversion rate of the website is up 50 percent. Employee result? Everyone loves it, because now their ideas can make it to market.
+Our business result? Conversion rate of the website is up 50 percent.
+Employee result? Everyone loves it, because now their ideas can make it to market.
 * Compare to traditional retail site
-
+* <p><em>Habits that enable you to survive in the <strong>danger zone</strong></em>.</p>
+vs Code freeze?
 
 # [] The Danger Zore
 You need a culture that keeps pushing into the danger zone
@@ -67,9 +68,12 @@ And has the habits that enable you to survive in the danger zone.
 
 # [] Questions?
 
-# []
-
 # [] Puppet & Chef
+Repeatable / Portable
+better intro
+Show code
+
+# [] Vagrant
 
 # [] TDD
 
@@ -91,7 +95,6 @@ And has the habits that enable you to survive in the danger zone.
 * Pair-Programming
 * Maybe even from someone from the other side of the wall
 * Have coffee with an operations person
-
 
 # [] Chat Ops
 # [] Amazon @ O'rily Velocity Conferance - June 16, 2011

@@ -33,3 +33,6 @@ section.the-wall-goes-up h3 span {
   background: rgba(0,0,0,.05);
 }
 
+table td {
+  padding: 20px;
+}

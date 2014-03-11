@@ -104,12 +104,15 @@
           <h3>Tools</h3>
         </section>
 
-  <section>
+        <section>
+          <h3>... habits [tools &amp; culture] that allow us to survive in <em><strong>The Danger Zone</strong></em>.</h3>
+        </section>
+
+        <section>
           <h3>TurboTax</h3>
           <p>165 new-feature experiments in the 3 month tax season</p>
           <p><a href="http://network.intuit.com/2011/04/20/leadership-in-the-agile-age/">Economist conference 2011</a></p>
         </section>
-
 
         <section>
           <h3>Puppet: State of DevOps Report</h3>
@@ -134,37 +137,69 @@
         <section>
           <h2>Puppet &amp; Chef</h2>
           <ul>
-            <li class="fragment">Configuration Management Tool</li>
-            <li class="fragment">Idempotent</li>
-            <li class="fragment">Hosted &amp; Local</li>
-            <li class="fragment">Modules / Cookbooks</li>
-            <li class="fragment">Testing tools</li>
+            <li>Configuration Management</li>
+            <li>Portable</li>
+            <li>Repeatable</li>
           </ul>
         </section>
 
         <section>
           <h2>Puppet</h2>
           <ul>
-            <li>Puppet Labs</li>
+            <li>http://puppetlabs.com/</li>
             <li>Ruby-like</li>
             <li>Modules @ Puppet Forge</li>
-            <li>Feels Opsy</li>
           </ul>
+          <pre>
+            <code>
+              package { "gtypist":
+                ensure   => installed,
+                provider => homebrew,
+              }
+              package { "redis":
+                ensure   => installed,
+                provider => homebrew,
+              }
+            </code>
+          </pre>
         </section>
 
         <section>
           <h2>Chef</h2>
           <ul>
+            <li>http://www.getchef.com/</li>
             <li>Opscode</li>
             <li>Ruby</li>
             <li>Cookbooks @ Opscode Community</li>
-            <li>Feels Developer-y</li>
           </ul>
+
+        <pre>
+            <code>
+              package "mysql" do
+                action :install
+              end
+
+              package "redis" do
+                action :install
+              end
+            </code>
+          </pre>
+
         </section>
 
         <section>
           <h2>Vagrant</h2>
           <p>http://www.vagrantup.com/</p>
+          <pre>
+            <code>
+              Vagrant.configure do |config|
+                config.vm.provision "puppet" do |puppet|
+                  puppet.manifests_path = "my_manifests"
+                  puppet.manifest_file = "default.pp"
+                end
+              end
+            </code>
+          </pre>
         </section>
 
         <section>
